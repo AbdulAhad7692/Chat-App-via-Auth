@@ -17,12 +17,12 @@
     <div class="container">
 
         <div class="switch">
-            <div class="login">Login</div>
-            <div class="signup">Signup</div>
+            <div class="login" onclick="tab1()">Login</div>
+            <div class="signup" onclick="tab2()">Signup</div>
         </div>
 
         <div class="outer">
-            <form class="form">
+            <div class="form">
 
                 <div class="page">
                     <label>Login Form</label>
@@ -44,39 +44,33 @@
                     <label>Signup Form</label>
 
                     <div class="element">
-                        <input id="get-email" placeholder="Enter your email" type="text">
+                        <input class="input" id="get-email" placeholder="Enter your email" type="text">
                         <span class="fas fa-envelope"></span>
                     </div>
 
 
                     <div class="element">
-                        <input id="get-username" placeholder="Enter your username" type="text">
+                        <input class="input" id="get-username" placeholder="Enter your username" type="text">
                         <span class="fas fa-user"></span>
                     </div>
 
 
                     <div class="element">
-                        <input id="get-number" placeholder="Enter your number" type="number">
+                        <input class="input" id="get-password" placeholder="Enter your password" type="password">
                         <span class="fas fa-lock"></span>
                     </div>
 
                     <div class="element">
-                        <input id="get-password" placeholder="Enter your password" type="password">
+                        <input class="input" id="get-number" placeholder="Enter your number" type="number">
                         <span class="fas fa-phone"></span>
                     </div>
 
-
                     <button class="btn" id="signup-button">SignUp</button>
+
                 </div>
-            </form>
+            </div>
         </div>
     </div>
-
-
-
-
-
-
 
     <script src="app.js" type="module"></script>
 </body>
