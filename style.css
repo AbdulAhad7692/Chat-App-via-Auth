@@ -1,0 +1,140 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif;
+    outline: none;
+    color: black;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(226, 226, 226);
+}
+
+.container {
+    position: relative;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: white;
+    width: 400px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.switch {
+    position: absolute;
+    right: 30px;
+    display: flex;
+    border-bottom: 2px solid black;
+}
+.switch::after{
+    content: '';
+    height: 6px;
+    width: 60px;
+    background-color: rgb(47, 189, 255);
+    border-radius: 20px 20px 0 0;
+    position: absolute;
+    bottom: 0;
+    left: 8px;
+}
+
+
+
+.login {
+    padding: 5px 12px;
+    background-color: black;
+    color: white;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    text-align: right;
+    margin-left: 4px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.signup {
+    padding: 5px 12px;
+    background-color: black;
+    color: white;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    text-align: right;
+    margin-left: 4px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.container .outer {
+    width: 100%;
+    margin-top: 40px;
+    text-align: center;
+    position: relative;
+}
+
+.outer .form {
+    width: 200%;
+    position: relative;
+    display: flex;
+    margin: auto;
+    transition: 0.2s ease-in-out;
+}
+
+.page {
+    margin: auto;
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    padding: 10px;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.element {
+    position: relative;
+}
+
+.element input {
+    width: 80%;
+    height: 40px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    background-color: rgb(226, 226, 226);
+    border: 2px solid black;
+    padding-left: 40px;
+    letter-spacing: 1px;
+}
+input::placeholder{
+    color: rgb(158, 158, 158);
+    font-size: 16px;
+}
+.element span{
+    position: absolute;
+    left:35px;
+    top: 12px;
+    font-size: 18px;
+}
+.btn{
+    padding: 5px 25px;
+    background: black;
+    color: white;
+    border-radius: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: none;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.btn:active{
+    transform: scale(1.01 );
+}
